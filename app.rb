@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./lib/rock_paper_scissors')
+require('./lib/beats?')
 also_reload('lib/**/*.rb')
 
 get('/') do
@@ -9,5 +9,5 @@ end
 
 get('/winner') do
   @winner = params.fetch('winner').beats?(opponent)
-  erb(:score)
+  erb(:winner)
 end
