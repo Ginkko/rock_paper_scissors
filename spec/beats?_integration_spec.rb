@@ -6,8 +6,10 @@ Capybara.app = Sinatra::Application
 
    it('accepts inputs of rock rock and determines tie') do
      visit('/')
-     fill_in('player1', :with => 'rock')
-     fill_in('player2', :with => 'rock')
+    #  fill_in('player1', :with => 'rock')
+    #  fill_in('player2', :with => 'rock')
+    select 'Rock', from: "player1"
+    select 'Rock', from: "player2"
      click_button('Play!')
      expect(page).to have_content('Tie!')
    end

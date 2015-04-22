@@ -1,10 +1,22 @@
 <h1>Welcome to Rock, Paper, Scissors</h1>
   <form action="/winner">
     <div class="form-group">
-      <lable for="player1">Player 1</lable>
-      <input id="player1" name="player1" class="form-control" type="text">
-      <lable for="player2">Player 2</lable>
-      <input id="player2" name="player2" class="form-control" type="text">
+      <label for="player1">Player 1</label>
+      <select id="player1" name="player1" class="form-control" type="text">
+        <option value ="rock">Rock</option>
+        <option value ="paper">Paper</option>
+        <option value ="scissors">Scissors</option>
+      </select>
+
+      <label for="player2">Player 2</label>
+      <select id="player2" name="player2" class="form-control" type="text">
+        <option value ="rock">Rock</option>
+        <option value ="paper">Paper</option>
+        <option value ="scissors">Scissors</option>
+      </select>
+
+    <!-- <input id="player1" name="player1" class="form-control" type="text"> -->
+      <!-- <input id="player2" name="player2" class="form-control" type="text">  -->
 
     </div>
   <button type="submit" class="btn-success">Play!</button>
