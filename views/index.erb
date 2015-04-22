@@ -1,24 +1,36 @@
-<h1>Welcome to Rock, Paper, Scissors</h1>
+<h1 class="page-header, text-center">Welcome to Rock, Paper, Scissors</h1>
   <form action="/winner">
-    <div class="form-group">
-      <label for="player1">Player 1</label>
-      <select id="player1" name="player1" class="form-control" type="text">
-        <option value ="rock">Rock</option>
-        <option value ="paper">Paper</option>
-        <option value ="scissors">Scissors</option>
-      </select>
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-4">
+          <label for="player1">Player 1</label>
+          <select id="player1" name="player1" class="form-control" type="text">
+            <option value ="rock">Rock</option>
+            <option value ="paper">Paper</option>
+            <option value ="scissors">Scissors</option>
+          </select>
+        </div>
 
-      <label for="player2">Player 2</label>
-      <select id="player2" name="player2" class="form-control" type="text">
-        <option value ="rock">Rock</option>
-        <option value ="paper">Paper</option>
-        <option value ="scissors">Scissors</option>
-      </select>
-
-    <!-- Old text field input code -->
-    <!-- <input id="player1" name="player1" class="form-control" type="text"> -->
-    <!-- <input id="player2" name="player2" class="form-control" type="text">  -->
-
-    </div>
-  <button type="submit" class="btn-success">Play!</button>
+        <div class="col-md-4">
+          <img class ="img-center center-block" src="http://ih2.redbubble.net/image.14910379.8227/sticker,375x360.u1.png" width="75%" height="75%"/>
+        </div>
+        <div class="col-md-4">
+          <label for="player2">Player 2</label>
+          <select id="player2" name="player2" class="form-control" type="text">
+            <option value ="rock">Rock</option>
+            <option value ="paper">Paper</option>
+            <option value ="scissors">Scissors</option>
+          </select>
+        </div>
+        <!-- Old text field input code -->
+        <!-- <input id="player1" name="player1" class="form-control" type="text"> -->
+        <!-- <input id="player2" name="player2" class="form-control" type="text">  -->
+        </div>
+      </div>
+  </div>
+  <div class = row>
+     <div class = "span 7 text-center">
+      <button type="submit" class="btn-success">Play!</button>
+     </div>
+  </div>
 </form>
